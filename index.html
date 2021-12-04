@@ -1,4 +1,4 @@
-<html lang="en" style="--vh:7.44px;"><head><style type="text/css">span.iconify, i.iconify, iconify-icon { display: inline-block; width: 1em; }</style>
+<html lang="en" style="--vh:7.54px;"><head><style type="text/css">span.iconify, i.iconify, iconify-icon { display: inline-block; width: 1em; }</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +35,7 @@
 <body>
 <div class="page-luckycat "> 
     <div class="wrap">
-        <canvas id="sakura" width="898" height="596"></canvas>
+        <canvas id="sakura" width="1519" height="604"></canvas>
     </div>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light mb-3 pt-5">
@@ -59,19 +59,33 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto align-items-center">
                         <!-- Authentication Links -->
-                                                       <li class="nav-item">
-                                    <a class="btn-luckycat px-5" href="https://www.slotautogame.com">เข้าสู่ระบบ</a>
-                                </li>
-                     
-                                <!-- <li class="nav-item">
-                                    <a class="nav-link"  
-                                        style="cursor: pointer" 
-                                        data-toggle="modal" 
-                                        data-target="#loginModal">
-                                        Login
+                                                    <li class="nav-item dropdown">
+                                <a id="navbarDropdown" class="btn-luckycat-user" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre="">
+                                    ข้อมูลสมาชิก <i class="fas fa-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-luckycat" aria-labelledby="navbarDropdown">
+                                    <a class="name-user dropdown-item" href="https://www.asia999spin.com/user_info"> <img src="https://www.asia999spin.com/images/user-avatar.png" class="mr-2"> 
+                                    TOY NO SURNAMME
                                     </a>
-                                </li> -->
-                           
+                                    <div class="d-flex flex-column align-items-center py-3">
+                                                                            <span> Coin คงเหลือ : <span id="user-coin-update">0</span>  </span>
+                                        <span>Free Spin คงเหลือ :  <span id="user-free-spin">0</span> </span>
+                                        <span>Reward Coin คงเหลือ : <span id="user-reward-coin">0</span> </span>
+                                                                        </div>
+                                    <a class="dropdown-item" href="https://www.asia999spin.com/reward">รางวัลของคุณ</a>
+                                    <a class="dropdown-item" href="https://www.asia999spin.com/payment-history">ประวัติการเติมเงิน</a>
+                                    <a class="dropdown-item" href="https://www.asia999spin.com/exchange">แลกรางวัลด้วย Reward Coin</a>
+                                    <a class="dropdown-item" href="https://www.asia999spin.com/shipping">การจัดส่งสินค้า</a>
+                                    <a class="dropdown-item logout-luckycat" href="https://www.slotautogame.com" onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                       <img src="https://www.asia999spin.com/images/logout.png" class="mr-2"> ออกจากระบบ
+                                    </a>
+
+                                    <form id="logout-form" action="https://www.slotautogame.com" method="POST" style="display: none;">
+                                        <input type="hidden" name="_token" value="Ow3ea4WFgdxLrVmvMgCDsDrCx3Kx2UtvwNeb7qOH">                                    </form>
+                                </div>
+                            </li>
+                      
                                             </ul>
                 </div>
             </div>
@@ -140,6 +154,13 @@
   </div>
   <div class="row pt-3">
     <div class="col-lg-12 text-center">
+            <div id="set-button">
+
+                   <button id="spin_button" type="button" class="btn-spin" onclick="coinEmpty();">
+            <img src="https://www.asia999spin.com/images/btn-spin.png">
+            <!-- 10 Coin -->
+          </button>
+                          </div>
             <form data-route="https://www.asia999spin.com/spin/1" id="form-add-reward" method="post" class="d-none">
         <input type="hidden" name="type_spin" id="type_spin">
         <input type="hidden" name="spin_id" value="1">
