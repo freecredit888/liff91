@@ -68,20 +68,20 @@
                                     TOY NO SURNAMME
                                     </a>
                                     <div class="d-flex flex-column align-items-center py-3">
-                                                                            <span> Coin คงเหลือ : <span id="user-coin-update">0</span>  </span>
-                                        <span>Free Spin คงเหลือ :  <span id="user-free-spin">0</span> </span>
-                                        <span>Reward Coin คงเหลือ : <span id="user-reward-coin">0</span> </span>
+                                                                            <span> Coin คงเหลือ : <span id="user-coin-update">1000</span>  </span>
+                                        <span>Free Spin คงเหลือ :  <span id="user-free-spin">1000</span> </span>
+                                        <span>Reward Coin คงเหลือ : <span id="user-reward-coin">1000</span> </span>
                                                                         </div>
                                     <a class="dropdown-item" href="https://www.slotautogame.com">รางวัลของคุณ</a>
                                     <a class="dropdown-item" href="https://www.slotautogame.com">ประวัติการเติมเงิน</a>
                                     <a class="dropdown-item" href="https://www.slotautogame.com">แลกรางวัลด้วย Reward Coin</a>
                                     <a class="dropdown-item" href="https://www.slotautogame.com">การจัดส่งสินค้า</a>
-                                    <a class="dropdown-item logout-luckycat" href="https://www.asia999spin.com/logout" onclick="event.preventDefault();
+                                    <a class="dropdown-item logout-luckycat" href="https://www.slotautogame.com" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
                                        <img src="https://www.asia999spin.com/images/logout.png" class="mr-2"> ออกจากระบบ
                                     </a>
 
-                                    <form id="logout-form" action="https://www.asia999spin.com/logout" method="POST" style="display: none;">
+                                    <form id="logout-form" action="https://www.slotautogame.com" method="POST" style="display: none;">
                                         <input type="hidden" name="_token" value="Ow3ea4WFgdxLrVmvMgCDsDrCx3Kx2UtvwNeb7qOH">                                    </form>
                                 </div>
                             </li>
@@ -158,7 +158,7 @@
 
                    <button id="spin_button" type="button" class="btn-spin" onclick="coinEmpty();">
             <img src="https://www.asia999spin.com/images/btn-spin.png">
-            <!-- 0 Coin -->
+            <!-- 10 Coin -->
           </button>
                           </div>
             <form data-route="https://www.asia999spin.com/spin/1" id="form-add-reward" method="post" class="d-none">
@@ -193,7 +193,7 @@
 
 
 <script type="text/javascript" language="javascript">
-  let spin_price_coin = 0.00;
+  let spin_price_coin = 10.00;
 
 
   let dataset_data = [{"id":2,"reward_name":"spin"},{"id":3,"reward_name":"none"},{"id":4,"reward_name":"spin"},{"id":5,"reward_name":"none"},{"id":6,"reward_name":"spin"},{"id":7,"reward_name":"none"},{"id":8,"reward_name":"item"},{"id":9,"reward_name":"none"},{"id":10,"reward_name":"none"},{"id":11,"reward_name":"none"},{"id":12,"reward_name":"item"},{"id":13,"reward_name":"none"},{"id":14,"reward_name":"none"},{"id":15,"reward_name":"none"},{"id":16,"reward_name":"item"},{"id":17,"reward_name":"none"}];
